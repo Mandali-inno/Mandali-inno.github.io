@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+          </ul>
+    </nav>
+  </header>
+  <h1>Login</h1>
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br>
+    <button type="button" id="loginButton">Login</button>
+    <a href="signup.html"><button type="button" id="signupButton">Signup</button></a>
+  </form>
+
+  <div id="loginStatus" style="display: none;">
+    <p>Welcome, <span id="loggedInUser"></span>!</p>
+    <button type="button" id="logoutButton">Logout</button>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
